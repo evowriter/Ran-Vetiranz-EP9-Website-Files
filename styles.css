@@ -281,6 +281,42 @@ body {
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0,0,0,0.7);
 }
+/* SOCIAL BUTTON BAR */
+.social-bar{
+  background: #2a0000;            /* your requested color */
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;  /* left + right like screenshot */
+  align-items: center;
+  gap: 40px;
+}
+
+.social-link{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.social-link img{
+  height: 100px;        /* adjust to match your screenshot size */
+  width: auto;
+  display: block;
+}
+
+/* optional: nice hover like the screenshot feel */
+.social-link:hover{
+  transform: translateY(-2px);
+}
+.social-link{
+  transition: transform 0.15s ease;
+}
+
+/* responsive: if small screen, center them */
+@media (max-width: 768px){
+  .social-bar{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 
 /* FOOTER */
 .footer {
