@@ -250,7 +250,7 @@ body {
 }
 .guides-grid {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 0fr;
   gap: 40px;
     font-size: 20px;
   font-style: italic;
